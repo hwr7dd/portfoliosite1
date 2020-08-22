@@ -1,9 +1,5 @@
 <!DOCTYPE HTML>
-<!--
-	Harrison Reid Portfolio
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+
 <html>
 	<head>
 		<title>Harrison Reid Portfolio.</title>
@@ -47,9 +43,7 @@
 										relating to the three categories shown above. Thank-you for taking
 										the time to check out my work!
 										</p>
-										<ul class="actions">
-											<li><a href="images/currentresume050420.docx" download class="button">Download My Full Resume</a></li>
-										</ul>
+										<div id="pdf"></div>
 									</div>
 									<span class="image"><img src="images/profilegithub.jpg" alt="" /></span>
 								</div>
@@ -123,6 +117,11 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src='/path-to-your-javascript-file/pdfobject.js'></script>
+			<script>
+			//Be sure your document contains an element with the CSS selector "pdf"
+			PDFObject.embed("/images/resume.pdf", "pdf");
+			</script>
 
 	</body>
 </html>
